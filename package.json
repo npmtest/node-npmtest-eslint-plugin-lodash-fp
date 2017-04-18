@@ -1,1 +1,40 @@
-{     "devDependencies": {         "eslint-plugin-lodash-fp": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-eslint-plugin-lodash-fp",     "homepage": "https://github.com/npmtest/node-npmtest-eslint-plugin-lodash-fp",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-eslint-plugin-lodash-fp.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [eslint-plugin-lodash-fp (v2.1.3)](https://github.com/jfmengels/eslint-plugin-lodash-fp#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-eslint-plugin-lodash-fp.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-eslint-plugin-lodash-fp) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-eslint-plugin-lodash-fp.svg)](https://travis-ci.org/npmtest/node-npmtest-eslint-plugin-lodash-fp)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "eslint-plugin-lodash-fp": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-eslint-plugin-lodash-fp",
+    "keywords": [
+        "coverage",
+        "test",
+        "eslint-plugin-lodash-fp"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_eslint_plugin_lodash_fp.js",
+    "name": "npmtest-eslint-plugin-lodash-fp",
+    "nameAlias": "npmtest_eslint_plugin_lodash_fp",
+    "nameOriginal": "npmtest-eslint-plugin-lodash-fp",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-eslint-plugin-lodash-fp.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}

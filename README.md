@@ -1,6 +1,6 @@
 # npmtest-eslint-plugin-lodash-fp
 
-#### test coverage for  [eslint-plugin-lodash-fp (v2.1.3)](https://github.com/jfmengels/eslint-plugin-lodash-fp#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-eslint-plugin-lodash-fp.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-eslint-plugin-lodash-fp) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-eslint-plugin-lodash-fp.svg)](https://travis-ci.org/npmtest/node-npmtest-eslint-plugin-lodash-fp)
+#### basic test coverage for  [eslint-plugin-lodash-fp (v2.1.3)](https://github.com/jfmengels/eslint-plugin-lodash-fp#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-eslint-plugin-lodash-fp.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-eslint-plugin-lodash-fp) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-eslint-plugin-lodash-fp.svg)](https://travis-ci.org/npmtest/node-npmtest-eslint-plugin-lodash-fp)
 
 #### ESLint rules for lodash/fp
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-eslint-plugin-lodash-fp/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-eslint-plugin-lodash-fp/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-eslint-plugin-lodash-fp/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-eslint-plugin-lodash-fp/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-eslint-plugin-lodash-fp/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-eslint-plugin-lodash-fp/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-eslint-plugin-lodash-fp/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-eslint-plugin-lodash-fp/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-eslint-plugin-lodash-fp/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-eslint-plugin-lodash-fp/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-eslint-plugin-lodash-fp/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-eslint-plugin-lodash-fp/build/coverage.html/index.html)
 
@@ -109,7 +109,8 @@
     "xo": {
         "exnext": true,
         "space": 2
-    }
+    },
+    "bin": {}
 }
 ```
 
